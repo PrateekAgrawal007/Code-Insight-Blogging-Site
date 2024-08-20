@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Code Insights</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+
+    <!-- we used bootstrap v5.3.3 -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    /> -->
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body class="bg-black">
+    <!--  Creating Navbar -->
+    <nav
+      id="home"
+      class="navbar navbar-expand-lg bg-body-tertiary"
+      data-bs-theme="dark"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">Code Insights</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#pricing"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#contact-us"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel with Caption -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./1.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dive Deep into Development</h5>
+            <p>
+              Explore tutorials, tips, and insights for all levels of coders.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./2.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Empowering Coders Everywhere</h5>
+            <p>Join us on the journey to become a coding pro!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./3.jpg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Master the Art of Code</h5>
+            <p>Unlock your coding potential with expert guidance!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h1 class="text-center my-5 text-white">Our Services</h1>
+      <div class="container">
+        <div class="row">
+          <!-- Service Card 1 -->
+          <div class="col-md-6 mb-4">
+            <div class="card border-light shadow-sm">
+              <img
+                src="./2842680.jpg"
+                class="card-img-top"
+                alt="Service Image 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dive Deep into Development</h5>
+                <p class="card-text">
+                  Explore comprehensive tutorials that guide you through
+                  advanced coding concepts and practices.
+                </p>
+                <a href="#" class="btn btn-primary">Continue Reading</a>
+              </div>
+            </div>
+          </div>
+          <!-- Service Card 2 -->
+          <div class="col-md-6 mb-4">
+            <div class="card border-light shadow-sm">
+              <img
+                src="./3426526.jpg"
+                class="card-img-top"
+                alt="Service Image 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Empowering Coders Everywhere</h5>
+                <p class="card-text">
+                  Join our community to elevate your coding skills with expert
+                  tips and resources.
+                </p>
+                <a href="#" class="btn btn-primary">Continue Reading</a>
+              </div>
+            </div>
+          </div>
+          <!-- Additional service cards can be added here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section id="pricing" class="bg-dark text-white py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Choose Your Learning Path</h2>
+        <p class="mb-5">
+          Unlock your coding potential with plans designed for developers at
+          every level.
+        </p>
+        <div class="row">
+          <!-- Free Plan -->
+          <div class="col-md-4">
+            <div class="card bg-secondary text-white mb-4 shadow-sm">
+              <div class="card-header">
+                <h4>Beginner</h4>
+              </div>
+              <div class="card-body">
+                <h1>$0<small class="text-muted">/mo</small></h1>
+                <ul class="list-unstyled">
+                  <li>Access to free tutorials</li>
+                  <li>Basic community support</li>
+                  <li>2 GB of storage for code snippets</li>
+                </ul>
+                <button class="btn btn-outline-light mt-3">Start Coding</button>
+              </div>
+            </div>
+          </div>
+          <!-- Pro Plan -->
+          <div class="col-md-4">
+            <div class="card bg-secondary text-white mb-4 shadow-sm">
+              <div class="card-header">
+                <h4>Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1>$15<small class="text-muted">/mo</small></h1>
+                <ul class="list-unstyled">
+                  <li>Advanced tutorials and guides</li>
+                  <li>Priority community support</li>
+                  <li>10 GB of storage for projects</li>
+                </ul>
+                <button class="btn btn-outline-light mt-3">Level Up</button>
+              </div>
+            </div>
+          </div>
+          <!-- Enterprise Plan -->
+          <div class="col-md-4">
+            <div class="card bg-primary text-white mb-4 shadow-sm">
+              <div class="card-header">
+                <h4>Master</h4>
+              </div>
+              <div class="card-body">
+                <h1>$29<small class="text-muted">/mo</small></h1>
+                <ul class="list-unstyled">
+                  <li>Personalized coding mentorship</li>
+                  <li>Exclusive access to new content</li>
+                  <li>30 GB of storage for full projects</li>
+                </ul>
+                <button class="btn btn-light mt-3">Become a Master</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us">
+      <div class="container my-5 text-white">
+        <h1 class="text-center">Contact Us</h1>
+        <form>
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="firstName"
+              placeholder="First name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastName"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="3"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-light py-3">
+      <div class="container text-center">
+        <p>&copy; 2024 Code Insights. All rights reserved.</p>
+        <p>123 Coding Lane, Code City, CS 12345</p>
+      </div>
+    </footer>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script> -->
+
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
